@@ -31,7 +31,7 @@ export default {
       try {
         const res = await ContactService.create(value);
         if (res?.success) {
-          message.value = "Liên hệ được tạo thành công.";
+          this.message= "Liên hệ được tạo thành công.";
           setTimeout(() => {
             router.push({ name: "ContactBook" });
           }, 1000);
